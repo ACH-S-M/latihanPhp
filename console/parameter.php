@@ -27,9 +27,11 @@
         }
 
     }
+
+    
 $param = new parameter();
 $hasil = $param->dinamisParam(2,3,6,10,90);
-$beli = $param->belibarang(20,90000);
+$beli = $param->belibarang(0,90000);
 
 
 ?>
