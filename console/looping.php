@@ -51,8 +51,18 @@ class looping{
             }
         }
     }
+    function fibonachi($angka){
+        $a = 0; $b = 1;
+        for($i = 0; $i<$angka;$i++){
+            $temp = $a + $b;
+            $a = $b;
+            $b = $temp;
+            echo $a."  " ;
+        }
+    }
    
 }
+
 
 function recursiveNya($value){
     if ($value <= 1){
@@ -62,9 +72,6 @@ function recursiveNya($value){
     }
 }
 
-
-
 $Loop = new looping();
-
-echo $rekursive;
+$Loop->fibonachi(10);
 ?>

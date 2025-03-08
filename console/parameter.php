@@ -25,6 +25,14 @@
             }
 
         }
+        function Polindrom($str){
+            $strreverese = strrev($str);
+            if ($strreverese == $str){
+                echo " Ini polindrom kata $str sama dengan $strreverese";
+            }else {
+                echo " Ini bukan polindrom kata $str  tidak sama dengan $strreverese";
+            }
+        }
 
     }
 
@@ -32,6 +40,7 @@
 $param = new parameter();
 $hasil = $param->dinamisParam(2,3,6,10,90);
 $beli = $param->belibarang(0,90000);
+$param->Polindrom("ibu ratna antar ubi")
 
 
 ?>
